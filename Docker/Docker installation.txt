@@ -1,8 +1,18 @@
 Docker Installation
 ===========================================
 
-sudo apt update -y
+// update package index of the and keep it in cache
+sudo apt update -y 
+
+//Install docker container
+
 sudo apt install docker.io -y 
-sudo systemctl start docker
+
+//starting the service of docker at runtime
+
+sudo systemctl start docker 
+
+// starting the service of the docker at the boottime only when you enable the service
+
 sudo systemctl enable docker
 sudo docker info
